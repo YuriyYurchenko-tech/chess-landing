@@ -1,0 +1,47 @@
+@import url('base.css');
+@import url('normalize.css');
+@import url('../src/fonts/fonts.css');
+
+@import url('components/lead.css');
+@import url('components/lead-description.css');
+@import url('components/text-button.css');
+
+@import url('components/running-line.css');
+
+@import url('components/info.css');
+@import url('components/idea.css');
+@import url('components/bender.css');
+@import url('components/table.css');
+
+@import url('components/stages.css');
+@import url('components/section-title.css');
+@import url('components/stages-buttons.css');
+
+@import url('components/participants.css');
+@import url('components/carousel-buttons.css');
+@import url('components/person.css');
+
+@import url('components/footer.css');
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.root {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+

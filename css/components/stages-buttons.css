@@ -1,0 +1,67 @@
+.stages-buttons {
+  width: max-content;
+  display: none;
+  align-items: center;
+  gap: 16px;
+}
+
+.stages-button {
+  padding: 0;
+  height: 44px;
+  width: 44px;
+  background-image: url("../../src/images/icons/button.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 100%;
+  outline: none;
+  cursor: pointer;
+  transition: .6s ease;
+}
+
+.stages-button:hover {
+  background-image: url("../../src/images/icons/button-hover.svg");
+}
+
+.stages-button_disabled {
+  background-image: url("../../src/images/icons/button-dsbl.svg");
+}
+
+.stages-button_disabled:hover {
+  background-image: url("../../src/images/icons/button-dsbl.svg");
+  cursor: unset;
+}
+
+.stages-button_left {
+  transform: rotate(180deg);
+}
+
+.stages-buttons__steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 6px;
+}
+
+.stages-buttons__step {
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 100%;
+}
+
+.stages-buttons__step_disabled {
+  background-color: var(--eighth-color);
+}
+
+@media screen and (width <= 1100px) {
+  .stages-buttons {
+    display: flex;
+  }
+
+  .stages-button {
+    height: 36px;
+    width: 36px;
+  }
+}

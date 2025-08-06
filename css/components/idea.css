@@ -1,0 +1,45 @@
+.idea {
+  width: 100%;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.idea__title {
+  margin: 0;
+  width: 100%;
+  font: var(--font-idea);
+  font-weight: var(--font-weight-s);
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.idea__title_inverted {
+  color: var(--fifth-color);
+  font-weight: var(--font-weight-l);
+}
+
+.idea__image {
+  width: 394px;
+  height: 250px;
+}
+
+@media screen and (width <= 1100px) {
+  .idea {
+    gap: 24px;
+    flex-direction: column;
+  }
+
+  .idea__image-span {
+    margin: 24px 0 26px;
+    width: 335px;
+    height: 212px;
+    display: flex;
+    background-image: url("../../src/images/meeting.png");
+    background-size: contain;
+  }
+
+  .idea__image {
+    display: none;
+  }
+}
